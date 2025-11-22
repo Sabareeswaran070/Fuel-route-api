@@ -1,0 +1,192 @@
+{
+  "info": {
+    "name": "Route Fuel API",
+    "_postman_id": "route-fuel-api-collection",
+    "description": "API collection for optimal route fuel planning with cost optimization.\n\n**Base URL**: `http://localhost:8000`\n\n**Features**:\n- Geocodes start/end addresses (USA only)\n- Calculates optimal route using OSRM\n- Plans fuel stops based on 500-mile range\n- Optimizes for lowest fuel costs\n- Returns total cost at 10 MPG efficiency",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Homepage - API Info",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/",
+          "host": ["{{base_url}}"],
+          "path": [""]
+        },
+        "description": "Get API welcome message and usage instructions"
+      },
+      "response": []
+    },
+    {
+      "name": "Calculate Route - Short Distance",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start_address\": \"New York, NY\",\n  \"end_address\": \"Washington, DC\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/route/",
+          "host": ["{{base_url}}"],
+          "path": ["api", "route", ""]
+        },
+        "description": "Test route planning for a short trip (<500 miles).\n\n**Expected**:\n- Distance: ~225 miles\n- Fuel stops: 0 (within range)\n- Response time: <5 seconds"
+      },
+      "response": []
+    },
+    {
+      "name": "Calculate Route - Medium Distance",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start_address\": \"New York, NY\",\n  \"end_address\": \"Atlanta, GA\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/route/",
+          "host": ["{{base_url}}"],
+          "path": ["api", "route", ""]
+        },
+        "description": "Test route planning for a medium trip (500-1000 miles).\n\n**Expected**:\n- Distance: ~850 miles\n- Fuel stops: 1-2 stops\n- Cost: ~$250-300 (depends on fuel prices)\n- Response time: <5 seconds"
+      },
+      "response": []
+    },
+    {
+      "name": "Calculate Route - Cross Country",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start_address\": \"Los Angeles, CA\",\n  \"end_address\": \"New York, NY\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/route/",
+          "host": ["{{base_url}}"],
+          "path": ["api", "route", ""]
+        },
+        "description": "Test route planning for a cross-country trip (>2500 miles).\n\n**Expected**:\n- Distance: ~2800 miles\n- Fuel stops: 5-6 stops\n- Total gallons: ~280 gallons\n- Cost: ~$900-1000\n- Response time: <8 seconds"
+      },
+      "response": []
+    },
+    {
+      "name": "Calculate Route - Chicago to Miami",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start_address\": \"Chicago, IL\",\n  \"end_address\": \"Miami, FL\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/route/",
+          "host": ["{{base_url}}"],
+          "path": ["api", "route", ""]
+        },
+        "description": "North-South route test.\n\n**Expected**:\n- Distance: ~1400 miles\n- Fuel stops: 2-3 stops"
+      },
+      "response": []
+    },
+    {
+      "name": "Calculate Route - Seattle to San Diego",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start_address\": \"Seattle, WA\",\n  \"end_address\": \"San Diego, CA\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/route/",
+          "host": ["{{base_url}}"],
+          "path": ["api", "route", ""]
+        },
+        "description": "West Coast route test.\n\n**Expected**:\n- Distance: ~1250 miles\n- Fuel stops: 2-3 stops"
+      },
+      "response": []
+    },
+    {
+      "name": "Error Test - Missing End Address",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start_address\": \"New York, NY\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/route/",
+          "host": ["{{base_url}}"],
+          "path": ["api", "route", ""]
+        },
+        "description": "Test error handling for missing required field.\n\n**Expected**: 400 Bad Request with error message"
+      },
+      "response": []
+    },
+    {
+      "name": "Error Test - Invalid Address",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start_address\": \"XYZ Invalid City\",\n  \"end_address\": \"ABC Fake Place\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/route/",
+          "host": ["{{base_url}}"],
+          "path": ["api", "route", ""]
+        },
+        "description": "Test error handling for invalid addresses.\n\n**Expected**: 400 Bad Request or 500 with geocoding error"
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000",
+      "type": "string"
+    }
+  ]
+}

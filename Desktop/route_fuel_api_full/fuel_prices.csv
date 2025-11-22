@@ -1,0 +1,95 @@
+lat,lon,price,name
+42.3601,-71.0589,3.45,Shell Boston MA
+42.3778,-71.0807,3.411,Circle K Boston MA
+41.3083,-72.9279,3.39,Mobil New Haven CT
+41.2798,-72.9205,3.428,Valero Haven CT
+41.3229,-72.9553,3.346,Valero Haven CT
+40.7128,-74.006,3.55,BP New York NY
+40.7445,-73.9794,3.672,Mobil York NY
+40.6714,-74.0474,3.668,Shell York NY
+39.9526,-75.1652,3.42,Sunoco Philadelphia PA
+39.9929,-75.1574,3.42,Sunoco Philadelphia PA
+39.9994,-75.1263,3.567,Sunoco Philadelphia PA
+39.2904,-76.6122,3.38,Exxon Baltimore MD
+39.3382,-76.5881,3.281,Chevron Baltimore MD
+38.9072,-77.0369,3.48,Shell Washington DC
+38.8721,-77.0094,3.542,Sunoco Washington DC
+38.947,-77.0643,3.359,Valero Washington DC
+37.5407,-77.436,3.35,Chevron Richmond VA
+37.5881,-77.3912,3.382,Shell Richmond VA
+37.5574,-77.4766,3.281,Exxon Richmond VA
+36.8529,-75.978,3.32,BP Norfolk VA
+36.849,-75.9717,3.408,Shell Norfolk VA
+36.8109,-75.9908,3.189,Circle K Norfolk VA
+35.7796,-78.6382,3.28,Shell Raleigh NC
+35.8118,-78.6396,3.366,Chevron Raleigh NC
+34.0007,-81.0348,3.25,Mobil Columbia SC
+34.0293,-81.0695,3.342,Shell Columbia SC
+33.749,-84.388,3.3,Shell Atlanta GA
+33.7309,-84.4362,3.177,BP Atlanta GA
+30.3322,-81.6557,3.35,BP Jacksonville FL
+30.3528,-81.651,3.238,Chevron Jacksonville FL
+30.3335,-81.6476,3.24,BP Jacksonville FL
+28.5383,-81.3792,3.4,Sunoco Orlando FL
+28.5773,-81.3926,3.361,Pilot Orlando FL
+25.7617,-80.1918,3.45,Shell Miami FL
+25.7836,-80.1819,3.508,Chevron Miami FL
+25.7299,-80.1511,3.531,Shell Miami FL
+30.4383,-84.2807,3.33,Chevron Tallahassee FL
+30.4695,-84.2665,3.365,Pilot Tallahassee FL
+30.4863,-84.2935,3.365,BP Tallahassee FL
+30.6954,-88.0399,3.28,Shell Mobile AL
+30.6475,-88.0114,3.218,Circle K Mobile AL
+30.6778,-88.0623,3.372,Circle K Mobile AL
+30.2672,-89.7816,3.35,BP Biloxi MS
+30.2965,-89.7775,3.485,Sunoco Biloxi MS
+30.3024,-89.757,3.285,Pilot Biloxi MS
+29.9511,-90.0715,3.4,Shell New Orleans LA
+29.9896,-90.1123,3.384,Circle K Orleans LA
+29.9265,-90.0469,3.513,Sunoco Orleans LA
+30.2241,-92.0198,3.3,Exxon Lafayette LA
+30.2267,-92.0069,3.261,Mobil Lafayette LA
+30.1954,-92.0475,3.201,Mobil Lafayette LA
+29.7604,-95.3698,3.38,Shell Houston TX
+29.7733,-95.3384,3.526,Mobil Houston TX
+29.712,-95.4005,3.423,Chevron Houston TX
+29.4241,-98.4936,3.35,Valero San Antonio TX
+29.4107,-98.5188,3.296,Sunoco Antonio TX
+31.7619,-106.485,3.3,Sunoco El Paso TX
+31.7942,-106.4861,3.208,Shell Paso TX
+32.7157,-117.1611,3.65,Chevron San Diego CA
+32.68,-117.2006,3.715,Shell Diego CA
+34.0522,-118.2437,3.75,Shell Los Angeles CA
+34.0112,-118.2054,3.814,Mobil Angeles CA
+37.7749,-122.4194,3.8,Chevron San Francisco CA
+37.8204,-122.4508,3.947,Sunoco Francisco CA
+37.7612,-122.4498,3.76,Sunoco Francisco CA
+41.1455,-104.8019,3.15,Shell Cheyenne WY
+41.1658,-104.809,3.057,Circle K Cheyenne WY
+41.2565,-95.9345,3.25,BP Omaha NE
+41.2552,-95.895,3.394,Exxon Omaha NE
+41.8781,-87.6298,3.5,Shell Chicago IL
+41.8816,-87.6128,3.533,Shell Chicago IL
+41.8849,-87.6021,3.564,Valero Chicago IL
+41.4993,-81.6944,3.42,BP Cleveland OH
+41.4618,-81.6596,3.346,Chevron Cleveland OH
+34.2257,-77.9447,3.3,Shell Wilmington NC
+34.2119,-77.9156,3.244,Chevron Wilmington NC
+35.2271,-80.8431,3.32,Mobil Charlotte NC
+35.2374,-80.8022,3.182,Pilot Charlotte NC
+36.1627,-86.7816,3.28,Shell Nashville TN
+36.1805,-86.7813,3.268,Shell Nashville TN
+35.1495,-90.049,3.3,BP Memphis TN
+35.1468,-90.045,3.437,Valero Memphis TN
+35.4676,-97.5164,3.22,Shell Oklahoma City OK
+35.4596,-97.5544,3.244,Circle K City OK
+35.5106,-97.5423,3.249,Sunoco City OK
+35.0844,-106.6504,3.35,Chevron Albuquerque NM
+35.049,-106.6941,3.399,Exxon Albuquerque NM
+35.0349,-106.6266,3.204,Chevron Albuquerque NM
+35.1983,-111.6513,3.45,Shell Flagstaff AZ
+35.2432,-111.673,3.557,Circle K Flagstaff AZ
+35.2281,-111.6994,3.449,Mobil Flagstaff AZ
+34.9006,-117.0168,3.7,Mobil Barstow CA
+34.9214,-117.0379,3.638,Sunoco Barstow CA
+34.9019,-116.9867,3.616,BP Barstow CA
